@@ -17,10 +17,11 @@
 </head>
 
 <body>
-    <div class="container border border-dark m-auto mt-5">
+    <div class="container border border-2 m-auto mt-5">
         <div class="row">
-            <div class="col-12 bg-secondary">
-                <h4>Payment form example</h4>
+            <div class="col-12 bg-light p-2 border border-b-2">
+                <h4 class="mt-1">Payment form example</h4>
+                </div>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -33,16 +34,16 @@
                 <div class="col-6">
                     <form>
                         <label for="card" class="form-label">Card #</label>
-                        <input id="card" type="text" class="form-control">
+                        <input id="card" type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX">
                 </div>
                 <div class="col-3">
                     <label for="cvc" class="form-label" >CVC #</label>
-                    <input id="cvc" type="text" class="form-control">
+                    <input id="cvc" type="text" class="form-control" placeholder="0000">
                 </div>
                 
                 <div class="col-3">           
                     <label for="amount" class="form-label">Amount</label>
-                    <span><strong>$</strong></span><input id="amount" type="text" class="form-control">
+                    <span><strong>$</strong></span><input id="amount" type="text" class="form-control" placeholder="Amount">
                 </div>
             </div>
             <div class="row">
@@ -64,6 +65,7 @@
                     <label for="state" class="form-label">State</label>
 
 <select id="state" class="form-control">
+<option value="Michoacán">Pick a state</option>
   <option value="Michoacán">Michoacán</option>
   <option value="Chiapas">Chiapas</option>
   <option value="Yucatán">Yucatán</option>
@@ -102,12 +104,18 @@
 <textarea id="message" rows="4" cols="10" class="form-control">
 
 </textarea>
-<p>Add any notes here.</p>
+<p class="text-secondary">Add any notes here.</p>
 </div>
                 </div>
             </div>
             </form>
-        </div>
+<div class="row border border border-top-2">
+            <div class="col-12 bg-light p-2 d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary me-1">Cancel</button>
+                <button type="button"class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        
 
     </div>
 
