@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form HTML5</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,101 +21,102 @@
         <div class="row">
             <div class="col-12 bg-light p-2 border border-b-2">
                 <h4 class="mt-1">Payment form example</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-danger p-2 mt-3 text-danger" role="alert">
+                    Some fields are missing
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="alert alert-danger p-2 mt-3 text-danger" role="alert">
-                        Some fields are missing
-                    </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <form>
+                    <label for="card" class="form-label">Card #</label>
+                    <input id="card" type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX">
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <form>
-                        <label for="card" class="form-label">Card #</label>
-                        <input id="card" type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX">
-                </div>
-                <div class="col-3">
-                    <label for="cvc" class="form-label" >CVC #</label>
-                    <input id="cvc" type="text" class="form-control" placeholder="0000">
-                </div>
-                
-                <div class="col-3">           
-                    <label for="amount" class="form-label">Amount</label>
-                    <span><strong>$</strong></span><input id="amount" type="text" class="form-control" placeholder="Amount">
-                </div>
+            <div class="col-3">
+                <label for="cvc" class="form-label">CVC #</label>
+                <input id="cvc" type="text" class="form-control" placeholder="0000">
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <label for="first-Name" class="form-label">First Name</label>
-<input id="first-Name" type="text" class="form-control">
-                </div>
-                <div class="col-6">
-                    <label for="last-Name" class="form-label">Last Name</label>
-<input id="last-Name" type="text" class="form-control">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <label for="city" class="form-label">City</label>
-<input id="city" type="text" class="form-control">
-                </div>
-                <div class="col-3">
-                    <label for="state" class="form-label">State</label>
 
-<select id="state" class="form-control">
-<option value="Michoacán">Pick a state</option>
-  <option value="Michoacán">Michoacán</option>
-  <option value="Chiapas">Chiapas</option>
-  <option value="Yucatán">Yucatán</option>
-  <option value="Sonora">Sonora</option>
-</select>
-                </div>
-                <div class="col-3">
-                     <label for="postal-Code" class="form-label">Postal Code</label>
-<input id="postal-Code" type="text" class="form-control">
-                </div>
+            <div class="col-3">
+                <label for="amount" class="form-label">Amount</label>
+                <span><strong>$</strong></span>
+                <input id="amount" type="text" class="form-control" placeholder="Amount">
             </div>
-            <div class="row">
-                <div class="col-2">
-                     <label class="form-label">We accept: </label>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="first-Name" class="form-label">First Name</label>
+                <input id="first-Name" type="text" class="form-control">
             </div>
-            <div class="row">
-            
-                <div class="col-2 bg-secondary rounded ms-2 me-auto h-25">
-                   <div class="mt-1">
-<input type="radio" id="master-Card" name="cards" value="HTML">
- <label for="master-Card" class="form-label"><i class="fa-brands fa-cc-mastercard"></i></label>
- <input type="radio" id="visa" name="cards" value="HTML">
- <label for="visa" class="form-label"><i class="fa-brands fa-cc-visa"></i></label>
-  <input type="radio" id="diners-club" name="cards" value="HTML">
- <label for="diners-club" class="form-label"><i class="fa-brands fa-cc-diners-club"></i></label>
- <input type="radio" id="amex" name="cards" value="HTML">
- <label for="amex" class="form-label"><i class="fa-brands fa-cc-amex"></i></label>
-                   </div>
+            <div class="col-6">
+                <label for="last-Name" class="form-label">Last Name</label>
+                <input id="last-Name" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="city" class="form-label">City</label>
+                <input id="city" type="text" class="form-control">
+            </div>
+            <div class="col-3">
+                <label for="state" class="form-label">State</label>
 
+                <select id="state" class="form-control">
+                    <option value="Michoacán">Pick a state</option>
+                    <option value="Michoacán">Michoacán</option>
+                    <option value="Chiapas">Chiapas</option>
+                    <option value="Yucatán">Yucatán</option>
+                    <option value="Sonora">Sonora</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <label for="postal-Code" class="form-label">Postal Code</label>
+                <input id="postal-Code" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <label class="form-label">We accept: </label>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-3 col-sm-3 col-md-3 col-lg-2 bg-secondary rounded ms-2 me-auto h-25">
+                <div class="mt-1">
+                    <input type="radio" id="master-Card" name="cards" value="HTML">
+                    <label for="master-Card" class="form-label"><i class="fa-brands fa-cc-mastercard"></i></label>
+                    <input type="radio" id="visa" name="cards" value="HTML">
+                    <label for="visa" class="form-label"><i class="fa-brands fa-cc-visa"></i></label>
+                    <input type="radio" id="diners-club" name="cards" value="HTML">
+                    <label for="diners-club" class="form-label"><i class="fa-brands fa-cc-diners-club"></i></label>
+                    <input type="radio" id="amex" name="cards" value="HTML">
+                    <label for="amex" class="form-label"><i class="fa-brands fa-cc-amex"></i></label>
                 </div>
-                <div class="col-6 textarea-content">
-                    <div class="pt-0">
+
+            </div>
+            <div class="col-6 textarea-content">
+                <div class="pt-0">
                     <label for="message" class="form-label">Message</label>
 
-<textarea id="message" rows="4" cols="10" class="form-control">
+                    <textarea id="message" rows="4" cols="10" class="form-control">
 
 </textarea>
-<p class="text-secondary">Add any notes here.</p>
-</div>
+                    <p class="text-secondary">Add any notes here.</p>
                 </div>
             </div>
-            </form>
-<div class="row border border border-top-2">
+        </div>
+        </form>
+        <div class="row border border border-top-2">
             <div class="col-12 bg-light p-2 d-flex justify-content-end">
                 <button type="button" class="btn btn-secondary me-1">Cancel</button>
-                <button type="button"class="btn btn-primary">Send</button>
-                </div>
+                <button type="button" class="btn btn-primary">Send</button>
             </div>
-        
+        </div>
+
 
     </div>
 
